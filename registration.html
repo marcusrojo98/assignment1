@@ -1,0 +1,162 @@
+<!-- Page 2: Registration Form -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <nav>
+        <a href="aboutme.html">About Me</a>
+        <a href="registration.html">Registration Form</a>
+    </nav>
+
+    <section>
+        <h2>Application Form</h2>
+        <p>Fill in your details</p>
+
+        <form action="#" method="post">
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="educationLevel">Education Level:</label>
+            <select id="educationLevel" name="educationLevel" required>
+                <option value="" disabled selected>Select level of education</option>
+                <option value="highSchool">High School</option>
+                <option value="college">College</option>
+                <option value="graduate">Graduate</option>
+            </select>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <!-- Add more country options here -->
+            </select>
+
+            <label for="stateCity">State/City of Residence:</label>
+            <input type="text" id="stateCity" name="stateCity" required>
+
+            <label for="employmentStatus">Employment Status:</label>
+            <select id="employmentStatus" name="employmentStatus" required>
+                <option value="" disabled selected>Select employment status</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+            </select>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="chooseSchool">Choose School:</label>
+            <select id="chooseSchool" name="chooseSchool" required>
+                <option value="" disabled selected>Select school</option>
+                <!-- Add more school options here -->
+            </select>
+
+            <label for="courseOfStudy">Choose Course of Study:</label>
+            <select id="courseOfStudy" name="courseOfStudy" required>
+                <option value="" disabled selected>Select course</option>
+                <!-- Add more course options here -->
+            </select>
+
+            <label for="howDidYouHear">How did you hear about us?</label>
+            <select id="howDidYouHear" name="howDidYouHear" required>
+                <option value="" disabled selected>Select channel</option>
+                <option value="website">Website</option>
+                <option value="socialMedia">Social Media</option>
+                <option value="friend">Friend</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="discountCode">Scholarship/Discount Code (optional):</label>
+            <input type="text" id="discountCode" name="discountCode">
+
+            <label>
+                <input type="checkbox" required>
+                By clicking continue, I agree to Terms of Use and acknowledge that I have read the Privacy Policy.
+            </label>
+
+            <button type="submit">Proceed</button>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
